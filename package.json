@@ -1,0 +1,14 @@
+{
+  "name": "is-pericos-crowded",
+  "version": "1.0.0",
+  "description": "An endpoint that returns data about how busy Taqueria Los Pericos is",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serverless-python-requirements": "^4.3.0"
+  }
+}

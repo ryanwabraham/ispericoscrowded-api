@@ -1,0 +1,27 @@
+org: ryanwabraham
+app: is-pericos-crowded-app
+service: is-pericos-crowded
+
+frameworkVersion: ">=1.2.0 <2.0.0"
+
+provider:
+  name: aws
+  runtime: python3.7
+  region: us-west-1
+  profile: serverless-cli
+
+functions:
+  getPopularity:
+    handler: handler.endpoint
+    events:
+      - http:
+          path: pericos
+          method: get
+          cors: true
+
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: non-linux
