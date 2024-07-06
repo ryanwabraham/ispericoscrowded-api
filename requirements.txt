@@ -1,4 +1,4 @@
-certifi==2023.7.22
+certifi==2024.7.4
 chardet==3.0.4
 geographiclib==1.49
 geopy==1.20.0
